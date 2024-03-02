@@ -1,0 +1,202 @@
+body {
+  margin: 2rem;
+  background-color: var(--dark-color-day-mode);
+  .fixed-sidebar {
+    background-color: var(--light-color-day-mode);
+    box-shadow: 0 0 2rem 0 var(--light-gray-shadow);
+    border-radius: 5px;
+
+    height: 96vh;
+    width: 20vw;
+
+    position: fixed;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: repeat(9, auto);
+
+    column-gap: 2rem;
+    .section {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &__sidebar {
+        height: 96vh;
+
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 9;
+      }
+      &__about {
+        grid-row: 1 / span 1;
+        // .row-about-content {
+        .row {
+          width: 100%;
+
+          display: flex;
+          flex-direction: row;
+          // flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          // .col-about-info {
+          .col {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 4rem;
+          }
+          // .col-about-video {
+          .col {
+            width: 50%;
+          }
+        }
+      }
+      &__services {
+        grid-row: 2 / span 1;
+
+        .container {
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
+          // row-gap: 3rem;
+          .row {
+            width: 100%;
+          }
+        }
+      }
+      &__process {
+        grid-row: 3 / span 1;
+      }
+      &__portfolio {
+        grid-row: 4 / span 1;
+      }
+      &__experience {
+        grid-row: 5 / span 1;
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          row-gap: 4rem;
+          .row {
+            .col {
+              // display: flex;
+              // flex-direction: row;
+              // justify-content: space-between;
+              // align-items: center;
+              // &:not(:last-child) {
+              //   // margin-top: -20rem;
+              // }
+            }
+          }
+        }
+      }
+      &__testimonial {
+        grid-row: 6 / span 1;
+      }
+      &__packages {
+        grid-row: 7 / span 1;
+      }
+      &__education {
+        grid-row: 8 / span 1;
+      }
+      &__contact {
+        grid-row: 9 / span 1;
+      }
+      &__about,
+      &__services,
+      &__process,
+      &__portfolio,
+      &__experience,
+      &__testimonial,
+      &__packages,
+      &__education,
+      &__contact {
+        background-color: var(--light-color-day-mode);
+        grid-column: 2 / span 1;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .container {
+          width: 90%;
+          margin: 0 auto;
+          padding: 6% 0;
+        }
+      }
+    }
+  }
+}
+
+body.night-mode {
+  background-color: var(--dark-color-night-mode);
+  .fixed-sidebar {
+    background-color: var(--light-color-night-mode);
+  }
+  .content {
+    .section {
+      &__about {
+        .about {
+          &__text {
+            &--animated {
+              &::before {
+                background-color: var(--light-color-night-mode);
+              }
+            }
+          }
+        }
+      }
+      &__about,
+      &__services,
+      &__process,
+      &__portfolio,
+      &__experience,
+      &__testimonial,
+      &__packages,
+      &__education,
+      &__contact {
+        background-color: var(--light-color-night-mode);
+      }
+    }
+  }
+}
+
+// @media (max-width: 48em) {
+//   //768px = 48 x 16px
+//   .fixed-sidebar {
+//   }
+// }
+
+@media (max-width: 85em) {
+  //1360px = 85 x 16px
+  .section {
+    &__about {
+      .row {
+        flex-direction: column !important;
+        .col {
+          width: 100% !important;
+        }
+        .col {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 62em) {
+  //992px = 62 x 16px
+  body {
+    .content {
+      .section {
+        &__experience {
+          .container {
+            row-gap: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+:root {
+  --primary-theme-color: #228be6;
+  --secondary-theme-color: #4c6ef5;
+  --primary-theme-color-alpha: rgba(34, 139, 230, 0.07);
+  --secondary-theme-color-alpha: rgba(76, 110, 245, 0.07);
+  --pure-white: #fff;
+  --color-transparent: transparent;
+  --dark-gray-shadow: rgba(41, 45, 48, 0.3);
+  --light-gray-shadow: rgba(41, 45, 48, 0.1);
+  --primary-fixed-color: #364f6a;
+  --secondary-fixed-color: #292d30;
+  --light-color: #5d5d5d;
+  --dark-color: #292d30;
+  --dark-color-day-mode: #fbffd7;
+  --light-color-day-mode: #ebefcb; }
+
+body.night-mode {
+  --light-color: #fdfdfd;
+  --dark-color: #b3b3b3;
+  --dark-color-night-mode: #364f6a;
+  --light-color-night-mode: #2f4861; }
+
+/*# sourceMappingURL=theme-4.css.map */

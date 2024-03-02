@@ -1,0 +1,238 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+  }
+  &__list {
+    font: {
+      size: 1.6rem;
+      family: "Lato", sans-serif;
+      weight: 600;
+    }
+    color: var(--light-color);
+    transition: color 0.4s ease-in-out;
+
+    &:hover {
+      color: var(--dark-color);
+    }
+    &--active {
+      position: relative;
+      color: var(--dark-color);
+
+      &::after {
+        content: "";
+        display: inline-block;
+        clear: both;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: var(--dark-color);
+
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+      }
+      transition: width 0.4s ease-in-out;
+    }
+    cursor: pointer;
+  }
+  //////////////////@at-root
+  /// /////
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    width: 100%;
+  }
+  &__item {
+    // width: 100%;
+    &--hide {
+      display: none;
+    }
+    &--show {
+      // display: block;
+      animation: zoomIn 0.4s ease;
+    }
+
+    &:hover .portfolio__imgbox .portfolio__icons {
+      margin-left: 0;
+    }
+    &:hover .portfolio__img {
+      object-position: bottom;
+    }
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  &__imgbox {
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+    object-position: top;
+    transition: object-position 3s ease-in-out;
+  }
+  &__icons {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    margin-left: -31.4rem;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  &__icon {
+    font: {
+      size: 1.4rem;
+    }
+
+    color: var(--pure-white);
+    display: inline-block;
+    &:not(:first-child) {
+      margin-right: 1rem;
+    }
+
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+  }
+  ////////////
+  ///
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-gray-shadow);
+
+    // hide
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    &--show {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+  }
+  &__overlay-imgbox {
+    width: 60%;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+  }
+  &__overlay-img {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    object-position: top;
+
+    border: 1rem solid var(--pure-white);
+
+    transition: object-position 6s ease-in-out;
+    &:hover {
+      object-position: bottom;
+    }
+  }
+  &__overlay-icon {
+    font: {
+      size: 1.8rem;
+    }
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--pure-white);
+    color: var(--dark-color);
+    border-radius: 50%;
+    box-shadow: 0 0 2rem 0.6rem var(--light-gray-shadow);
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 85em) {
+  //1360px = 85 x 16px
+  .portfolio {
+    &__gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 62em) {
+  //992px = 62 x 16px
+  .portfolio {
+    &__gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__icons {
+      margin-left: -36.2rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  //768px = 48 x 16px
+  .portfolio {
+    &__nav {
+      column-gap: 3rem;
+      flex-wrap: wrap;
+      row-gap: 2rem;
+    }
+    &__gallery {
+      grid-template-columns: 1fr;
+    }
+    &__icons {
+      margin-left: -56.4rem;
+    }
+  }
+}

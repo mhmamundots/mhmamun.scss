@@ -1,0 +1,46 @@
+.link {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  row-gap: 1rem;
+
+  &__title {
+    font: {
+      size: 1.7rem;
+      family: "Lato", sans-serif;
+      weight: 700;
+    }
+    color: var(--light-color);
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+  }
+  &__item {
+    &:link,
+    &:visited {
+      font: {
+        size: 1.6rem;
+        family: "Lato", sans-serif;
+        // weight: 400;
+      }
+      color: var(--light-color);
+    }
+    &:link,
+    &:visited {
+    }
+    &--whatsapp {
+      &:link,
+      &:visited {
+        font: {
+          size: 1.6rem;
+          weight: 600;
+        }
+        // animation: btnAnimate 1s infinite forwards,
+        //   btnAnimate 1s infinite backwards;
+      }
+    }
+  }
+}

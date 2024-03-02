@@ -1,0 +1,57 @@
+.sidebar-header {
+  position: absolute;
+  top: -10%;
+  left: 82%;
+  transform: translate(-50%, 50%);
+
+  width: 100%;
+  height: 30%;
+  .site-logo {
+    &__img {
+      width: 35%;
+      border-radius: 50%;
+      border: 7px solid var(--primary-theme-color);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+}
+
+@media (max-width: 85em) {
+  //1360px = 85 x 16px
+  .sidebar-header {
+    .site-logo {
+      &__img {
+        width: 42%;
+      }
+    }
+  }
+}
+
+@media (max-width: 62em) {
+  //992px = 62 x 16px
+  html {
+    font: {
+      size: 56%;
+    }
+  }
+  .sidebar-header {
+    left: 76%;
+    .site-logo {
+      &__img {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  //768px = 48 x 16px
+
+  .sidebar-header {
+    left: 66%;
+    .site-logo {
+      &__img {
+        width: 68%;
+      }
+    }
+  }
+}

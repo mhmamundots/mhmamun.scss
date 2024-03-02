@@ -1,0 +1,64 @@
+body.night-mode {
+  .tab {
+    background-color: var(--dark-color-night-mode);
+    &__labels {
+      background-color: var(--light-color-night-mode);
+    }
+    &__btn {
+      &--1 {
+        &:checked ~ .tab__labels > .tab__label--1 {
+          background-color: var(--dark-color-night-mode);
+        }
+      }
+      &--2 {
+        &:checked ~ .tab__labels > .tab__label--2 {
+          background-color: var(--dark-color-night-mode);
+        }
+      }
+      &--3 {
+        &:checked ~ .tab__labels > .tab__label--3 {
+          background-color: var(--dark-color-night-mode);
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    &__list {
+      background-color: var(--dark-color-night-mode);
+    }
+  }
+  .p-skill {
+    background-color: var(--dark-color-night-mode);
+    &__piechart {
+      &::before {
+        background-color: var(--dark-color-night-mode);
+      }
+    }
+  }
+  .counter {
+    background-color: var(--dark-color-night-mode);
+  }
+
+  .review {
+    &__btn {
+      background-color: var(--dark-color-night-mode);
+    }
+  }
+
+  .contact {
+    &__form {
+      background-color: var(--dark-color-night-mode);
+      .form {
+        &__input {
+          background-color: var(--light-color-night-mode);
+        }
+      }
+    }
+  }
+  .package {
+    &__list {
+      background-color: var(--dark-color-night-mode);
+    }
+  }
+}

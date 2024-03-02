@@ -1,0 +1,29 @@
+.scroll-top {
+  width: 3.8rem;
+  height: 3.8rem;
+  background-image: linear-gradient(
+    15deg,
+    var(--primary-theme-color),
+    var(--secondary-theme-color)
+  );
+  color: var(--pure-white);
+  border: none;
+  border-radius: 3px;
+
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+
+  cursor: pointer;
+  &__btn {
+    font: {
+      size: 1.8rem;
+    }
+  }
+  display: none;
+  transition: display 0.4s ease-in-out;
+  z-index: 9;
+}
+.sticky {
+  display: block;
+}

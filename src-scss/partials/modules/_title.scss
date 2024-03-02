@@ -1,0 +1,38 @@
+.title {
+  font: {
+    family: "Lato", sans-serif;
+  }
+  text-align: center;
+  margin-bottom: 5rem;
+  &__subtitle {
+    font: {
+      size: 1.3rem;
+    }
+    text: {
+      transform: uppercase;
+    }
+    color: var(--dark-color);
+  }
+  &__main {
+    font: {
+      size: 2.8rem;
+      weight: 800;
+    }
+    background-image: linear-gradient(
+      15deg,
+      var(--secondary-theme-color),
+      var(--primary-theme-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 1rem;
+  }
+  &__des {
+    font: {
+      size: 1.6rem;
+    }
+    line-height: 1.5;
+    color: var(--light-color);
+  }
+}

@@ -1,0 +1,98 @@
+.switcher {
+  position: fixed;
+  top: 9.6rem;
+  right: 3rem;
+
+  width: max-content;
+  padding: 1.6rem;
+  background-color: $color-pure-white;
+  border: 2px solid $color-light-gray;
+
+  transform: translateX(116%);
+
+  transition: transform 0.4s ease-in-out;
+
+  z-index: 9999;
+  &.open {
+    transform: translateX(0);
+  }
+  &.open .switcher__btn {
+    left: -6rem;
+  }
+  &__btn {
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: $color-pure-white;
+    border: 2px solid $color-light-gray;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    left: -6.4rem;
+    &--theme {
+      top: 1rem;
+    }
+    &--day-night {
+      top: 5rem;
+    }
+  }
+  &__icon {
+    font: {
+      size: 1.8rem;
+    }
+    margin-top: 5px;
+  }
+  &__title {
+    font: {
+      size: 1.6rem;
+      family: "Lato", sans-serif;
+    }
+    color: $color-extradark-gray;
+  }
+  &__themes {
+    margin-top: 1rem;
+  }
+  &__theme {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    border-radius: 50%;
+
+    &--1 {
+      background-image: linear-gradient(
+        to top right,
+        $theme-color-1,
+        $theme-color-2
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to top right,
+        $theme-color-3,
+        $theme-color-4
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to top right,
+        $theme-color-5,
+        $theme-color-6
+      );
+    }
+    &--4 {
+      background-image: linear-gradient(
+        to top right,
+        $theme-color-7,
+        $theme-color-8
+      );
+    }
+    &--5 {
+      background-image: linear-gradient(
+        to top right,
+        $theme-color-9,
+        $theme-color-10
+      );
+    }
+  }
+}

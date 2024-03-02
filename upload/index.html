@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- WEBSITE TITLE -->
+    <title>MH Mamun &dash; Full-stack Developer</title>
+
+    <!-- FAVORITE ICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- FONTAWESOME -->
+    <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+
+    <!-- THEME COLOR SWITCHER CSS -->
+    <link
+      class="theme-colors"
+      type="text/css"
+      rel="stylesheet"
+      href="css/theme-colors/theme-1.css"
+      title="switcher__theme--1"
+    />
+    <link
+      class="theme-colors"
+      type="text/css"
+      rel="stylesheet"
+      href="css/theme-colors/theme-2.css"
+      title="switcher__theme--2"
+      disabled
+    />
+    <link
+      class="theme-colors"
+      type="text/css"
+      rel="stylesheet"
+      href="css/theme-colors/theme-3.css"
+      title="switcher__theme--3"
+      disabled
+    />
+    <link
+      class="theme-colors"
+      type="text/css"
+      rel="stylesheet"
+      href="css/theme-colors/theme-4.css"
+      title="switcher__theme--4"
+      disabled
+    />
+    <link
+      class="theme-colors"
+      type="text/css"
+      rel="stylesheet"
+      href="css/theme-colors/theme-5.css"
+      title="switcher__theme--5"
+      disabled
+    />
+
+    <!-- MAIN CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- THEME SWITCHER STARTS -->
+    <div class="switcher open">
+      <div class="switcher__btn switcher__btn--theme">
+        <i class="switcher__icon fas fa-cog fa-spin"></i>
+      </div>
+      <div class="switcher__btn switcher__btn--day-night">
+        <i class="switcher__icon fa-solid"></i>
+      </div>
+      <h4 class="switcher__title">Theme Colors</h4>
+      <div class="switcher__themes">
+        <span
+          class="switcher__theme switcher__theme--1"
+          onclick="setThemeColor('switcher__theme--1')"
+          >&nbsp;</span
+        >
+        <span
+          class="switcher__theme switcher__theme--2"
+          onclick="setThemeColor('switcher__theme--2')"
+          >&nbsp;</span
+        >
+        <span
+          class="switcher__theme switcher__theme--3"
+          onclick="setThemeColor('switcher__theme--3')"
+          >&nbsp;</span
+        >
+        <span
+          class="switcher__theme switcher__theme--4"
+          onclick="setThemeColor('switcher__theme--4')"
+          >&nbsp;</span
+        >
+        <span
+          class="switcher__theme switcher__theme--5"
+          onclick="setThemeColor('switcher__theme--5')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+    <!-- THEME SWITCHER ENDS -->
+
+    <!-- HUMBURGER ICON -->
+    <input class="nav-checkbox" type="checkbox" id="toggle" />
+    <label for="toggle" class="nav-btn">
+      <span class="nav-barline">&nbsp;</span>
+    </label>
+    <div class="nav-bg">&nbsp;</div>
+
+    <!-- SCROLL TOP BUTTON -->
+    <button class="scroll-top" type="button" id="scroll-top-btn">
+      <i class="scroll-top__btn fa-solid fa-arrow-up-from-bracket"></i>
+    </button>
+
+    <!-- SIDEBAR SECTION STARTS -->
+    <div class="fixed-sidebar">
+      <!-- SIDEBAR HEADER SECTION STARTS -->
+      <header class="sidebar-header">
+        <div class="fixed-container">
+          <div class="site-logo">
+            <a class="site-logo__link" href="#about">
+              <img
+                src="assets/images/logo/logo-white.png"
+                alt="MH Mamun"
+                class="site-logo__img"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- SIDEBAR HEADER SECTION ENDS -->
+
+      <!-- SIDEBAR CONTENT SECTION STARTS -->
+      <main class="sidebar-content">
+        <div class="fixed-container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about" class="menu__link">
+                  <i class="menu__icon fa-solid fa-user-large"></i>
+                  <span class="menu__text">Who I Am</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="menu__link">
+                  <i class="menu__icon fa-solid fa-layer-group"></i>
+                  <span class="menu__text">What I Do</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#process" class="menu__link">
+                  <i class="menu__icon fa-solid fa-hourglass-start"></i>
+                  <span class="menu__text">How I Work</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#portfolio" class="menu__link">
+                  <i class="menu__icon fa-solid fa-briefcase"></i>
+                  <span class="menu__text">Work Sample</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#experience" class="menu__link">
+                  <i class="menu__icon fa-solid fa-clock"></i>
+                  <span class="menu__text">Skills & Experience</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#testimonial" class="menu__link">
+                  <i class="menu__icon fa-solid fa-sack-dollar"></i>
+                  <span class="menu__text">Client Reviews</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#packages" class="menu__link">
+                  <i class="menu__icon fa-solid fa-lightbulb"></i>
+                  <span class="menu__text">Packages</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#education" class="menu__link">
+                  <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                  <span class="menu__text">Education</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact" class="menu__link">
+                  <i class="menu__icon fa-solid fa-envelope"></i>
+                  <span class="menu__text">Contact Me</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="f-btn">
+            <button class="f-btn__item f-btn__item--contact">
+              <i class="f-btn__icon fa-solid fa-comment-dots"></i>
+              <span class="f-btn__text">Let's Talk</span>
+            </button>
+            <button
+              class="f-btn__item f-btn__item--intro"
+              onclick="playVideo('assets/video/at-a-glance.mp4')"
+            >
+              <i class="f-btn__icon fa-solid fa-circle-play"></i>
+              <span class="f-btn__text">Intro Video</span>
+            </button>
+          </div>
+        </div>
+      </main>
+      <!-- SIDEBAR CONTENT SECTION ENDS -->
+    </div>
+    <!-- SIDEBAR SECTION ENDS -->
+
+    <!-- CONTENT SECTION STARTS -->
+    <main class="content">
+      <!-- SIDEBAR SECTION STARTS -->
+      <section class="section section__sidebar">
+        <div class="container">
+          <h2>&nbsp;</h2>
+        </div>
+      </section>
+      <!-- SIDEBAR SECTION ENDS -->
+
+      <!-- ABOUT SECTION STARTS -->
+      <section id="about" class="section section__about">
+        <div class="container">
+          <!-- <div class="row-about-content"> -->
+          <div class="row">
+            <!-- <div class="col-about-info"> -->
+            <div class="col">
+              <div class="about">
+                <h1 class="about__title">
+                  <span class="about__text about__text--normal"
+                    >Hey, this is MH Mamun!</span
+                  ><br />
+                  <span
+                    class="about__text about__text--animated"
+                    data-delay="3000"
+                    data-skills='["WordPress Developer.", "Logo Designer.", "Figma UI Designer.","UI to HTML Designer."]'
+                  ></span>
+                </h1>
+                <p class="about__des">
+                  Since 2019, I've worked in Upwork, Fiverr & local
+                  marketplaces. I have successfully completed 200+ big projects
+                  with more than 50 buyers from more than 15 Countries and this
+                  journey is being continued...
+                </p>
+              </div>
+              <div class="btn">
+                <a
+                  href="assets/resume/resume-of-mhmamun.pdf"
+                  class="btn__link btn__link--resume"
+                >
+                  <i class="btn__icon fa-solid fa-cloud-arrow-down"></i>
+                  <span class="btn__text">Resume</span>
+                </a>
+                <a href="#" class="btn__link btn__link--hire">
+                  <i class="btn__icon fa-solid fa-comment-dots"></i>
+                  <span class="btn__text">Let's Talk</span>
+                </a>
+              </div>
+              <div class="link">
+                <h3 class="link__title">Hire me on:</h3>
+                <div class="link__list">
+                  <a
+                    href="https://www.upwork.com/freelancers/mhmamun"
+                    class="link__item link__item--upwork"
+                    target="_blank"
+                    >upwork.com</a
+                  >
+                  <a
+                    href="https://www.fiverr.com/design_coder"
+                    class="link__item link__item--fiverr"
+                    target="_blank"
+                    >fiverr.com</a
+                  >
+                  <a
+                    href="http://www.jobindesk.com"
+                    class="link__item link__item--jobindesk"
+                    target="_blank"
+                    >jobindesk.com</a
+                  >
+                </div>
+              </div>
+              <div class="social">
+                <a
+                  href="https://github.com/devmhmamun"
+                  class="social__link social__link--github"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://dribbble.com/graphicxstudio"
+                  class="social__link social__link--basketball"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-solid fa-basketball"></i>
+                </a>
+                <a
+                  href="https://www.behance.net/graphicxstudio"
+                  class="social__link social__link--behance"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-behance"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/dev.mhmamun"
+                  class="social__link social__link--facebook"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/wpdeveloper/"
+                  class="social__link social__link--linkedin"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCEib5m7LEjHLhvmpXvo_J-Q"
+                  class="social__link social__link--youtube"
+                  target="_blank"
+                >
+                  <i class="social__icon fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="col-about-video"> -->
+            <div class="col">
+              <div class="video">
+                <div class="video__imgbox">
+                  <img
+                    class="video__img"
+                    src="assets/svg-icons/custom/at-a-glance.svg"
+                    alt="At a glance"
+                  />
+                  <i
+                    class="video__play-icon fa-solid fa-play"
+                    onclick="playVideo('assets/video/at-a-glance.mp4')"
+                  ></i>
+                </div>
+                <div class="video__box">
+                  <div class="video__clip-box">
+                    <video class="video__clip" controls autoplay muted>
+                      <source
+                        src="assets/video/at-a-glance.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                    <i class="video__close-icon fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION ENDS -->
+
+      <!-- SERVICES SECTION STARTS -->
+      <section id="services" class="section section__services">
+        <!-- <section id="service" class="section section__what"> -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">What I Do</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <figure class="card__box card__box--1">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-wordpress"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">WordPress Dev.</h3>
+                    <p class="card__des">
+                      Building a WordPress website using a related theme and
+                      plugin customization or coding.
+                    </p>
+                    <!-- <div class="card__list">
+                    <div class="card__item">
+                      <i class="card__iconic fa-solid fa-angle-right"></i>
+                      <span class="card__text"
+                        >Using a related theme & plugins customization</span
+                      >
+                    </div>
+                    <div class="card__item">
+                      <i class="card__iconic fa-solid fa-angle-right"></i>
+                      <span class="card__text"
+                        >Or UI to WordPress website development</span
+                      >
+                    </div>
+                    <div class="card__item">
+                      <i class="card__iconic fa-solid fa-angle-right"></i>
+                      <span class="card__text">SEO using Yoast SEO plugin</span>
+                    </div>
+                    <div class="card__item">
+                      <i class="card__iconic fa-solid fa-angle-right"></i>
+                      <span class="card__text"
+                        >Website speed-up using WP Rocket</span
+                      >
+                    </div>
+                  </div> -->
+                  </figcaption>
+                </figure>
+                <figure class="card__box card__box--2">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-figma"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">UI/UX Design</h3>
+                    <p class="card__des">
+                      Designing a website/mobile app UI using Figma which will
+                      be the responsive, prototype.
+                    </p>
+                  </figcaption>
+                </figure>
+                <figure class="card__box card__box--3">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-hour-glass"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">HTML Conversion</h3>
+                    <p class="card__des">
+                      Converting UI to HTML with CSS, SCSS, and JavaScript that
+                      are devices-wise responsive.
+                    </p>
+                  </figcaption>
+                </figure>
+                <!-- </div>
+              </div> -->
+                <!-- <div class="row">
+              <div class="card"> -->
+                <figure class="card__box card__box--4">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-tools"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">Bug Fixing Issue</h3>
+                    <p class="card__des">
+                      Fixing WordPress, CSS, and JavaScript bugs and maintaining
+                      your website for better performance.
+                    </p>
+                  </figcaption>
+                </figure>
+                <figure class="card__box card__box--5">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-pen"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">Logo Design</h3>
+                    <p class="card__des">
+                      Designing a brand identity logo using Adobe Illustrator
+                      that'll be unique, and modern.
+                    </p>
+                  </figcaption>
+                </figure>
+                <figure class="card__box card__box--6">
+                  <svg class="card__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-codepen"
+                    ></use>
+                  </svg>
+                  <figcaption class="card__details">
+                    <h3 class="card__title">MERN-stack Dev.</h3>
+                    <p class="card__des">
+                      Developing a website using MongoDB, Express, React, and
+                      Node JS that's all devices responsive.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES SECTION ENDS -->
+
+      <!-- PROCESS SECTION STARTS -->
+      <section id="process" class="section section__process">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">How I Work</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="process">
+                <div class="process__item">
+                  <svg class="process__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-paper-plane"
+                    ></use>
+                  </svg>
+                  <div class="process__info">
+                    <h4 class="process__title">Discuss & Idea</h4>
+                    <p class="process__des">
+                      Lorem ipsum dolor sit, amet <br />consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="process__item">
+                  <svg class="process__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-hammer"
+                    ></use>
+                  </svg>
+                  <div class="process__info">
+                    <h4 class="process__title">Plan & Action</h4>
+                    <p class="process__des">
+                      Lorem ipsum dolor sit, amet <br />consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="process__item">
+                  <svg class="process__icon">
+                    <use
+                      xlink:href="assets/svg-icons/sprite.svg#icon-hour-glass"
+                    ></use>
+                  </svg>
+                  <div class="process__info">
+                    <h4 class="process__title">Review & Testing</h4>
+                    <p class="process__des">
+                      Lorem ipsum dolor sit, amet <br />consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tab">
+                <input
+                  class="tab__btn tab__btn--1"
+                  type="radio"
+                  id="tab-1"
+                  name="table-of-content"
+                  value="Consultation"
+                  checked
+                />
+                <input
+                  class="tab__btn tab__btn--2"
+                  type="radio"
+                  id="tab-2"
+                  name="table-of-content"
+                  value="Requirements"
+                />
+                <input
+                  class="tab__btn tab__btn--3"
+                  type="radio"
+                  id="tab-3"
+                  name="table-of-content"
+                  value="Delivery"
+                />
+                <div class="tab__labels">
+                  <label class="tab__label tab__label--1" for="tab-1"
+                    >Consultation</label
+                  >
+                  <label class="tab__label tab__label--2" for="tab-2"
+                    >Requirements</label
+                  >
+                  <label class="tab__label tab__label--3" for="tab-3"
+                    >Pay & Delivery</label
+                  >
+                </div>
+                <!-- ABOUT SECTION ENDS -->
+
+                <!-- SERCICES SECTION STARTS -->
+                <div class="tab__contents">
+                  <!-- I want to discuss your required project through the following questions.
+1. What service do you want? (As an example: WordPress Website)
+2. What type of website do you want? (As an example: eCommerce Website)
+3. How do you want to build your website? (As an example: Using theme & plugins customization)
+4. What functionalities do you want in your e-commerce website? (As an example: Landing page, shop page, 25 products under 5 categories, 2 payments system)
+5. Which theme do you recommend that I will use to build your WordPress website? (As an example: Actually, I have no recommended WordPress theme. But which theme can get fulfill my requirements you can use that)
+6. Do you have recommended page builder that I will use to build your WordPress website? (As an example: I have no recommended page builder. Which is easy to page customize you can use that)
+7. Do you have purchased and connected domain hosting or will I connect your domain hosting? (As an example: My domain and hosting have already connected)
+8. Which company's domain hosting has been used for your website? (As an example: I purchased and used Siteground/Namecheap hosting)
+9. Do you have hosting cPanel where if you need you can manage your website and also can fix critical issues? (As an example: Yes, I have hosting's cPanel)
+10. Did you have installed WordPress on your server or will I install WordPress? (As an example: WordPress is already installed and setup)
+11. How many days you can give to build your website? (As an example: 7 days)
+12. How much are you willing to pay for this website building? (As an example: 345 USD) 
+
+[NOTE: If you want any premium features then you will purchase and provide me with all the premium featured plugins and resources. And I will build your website as you want.]
+
+13. Finally, are you ready and can I get started on your project work? (As an example: Yes, you can start my project now...) -->
+                    <div class="tab__content tab__content--1">
+                      <h4 class="tab__title">
+                        I want to discuss your required project through the
+                        following questions:
+                      </h4>
+                      <div class="tab__discuss">
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >What service do you want?
+                            <em>(As an example: WordPress website)</em>
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >What type of website do you want?
+                            <em>(As an example: eCommerce website)</em>
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >How do you want to build your website?
+                            <em
+                              >(As an example: Using theme & plugins
+                              customization)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >What functionalities do you want in your e-commerce
+                            website?
+                            <em
+                              >(As an example: Landing page, Shop page, 25
+                              products uploaded under 5 categories, Add 2 payments
+                              system)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Which theme do you recommend that I will use to build
+                            your WordPress website?
+                            <em
+                              >(As an example: Actually, I have no recommended
+                              WordPress theme. But which theme can get fulfill my
+                              requirements you can use that)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Do you have recommended page builder that I will use
+                            to build your WordPress website?
+                            <em
+                              >(As an example: I have no recommended page builder.
+                              Which is easy to page customize you can use
+                              that)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Do you have purchased and connected domain hosting or
+                            will I connect your domain hosting?
+                            <em
+                              >(As an example: My domain and hosting have already
+                              connected)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Which company's domain hosting has been used for your
+                            website?
+                            <em
+                              >(As an example: I purchased and used
+                              Siteground/Namecheap hosting)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Do you have hosting cPanel where if you need you can
+                            manage your website and also can fix critical issues?
+                            <em>(As an example: Yes, I have hosting's cPanel)</em>
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Did you have installed WordPress on your server or
+                            will I install WordPress?
+                            <em
+                              >(As an example: WordPress is already installed and
+                              setup)</em
+                            >
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >How many days you can give me to build your website?
+                            <em>(As an example: 7 days)</em>
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >How much are you willing to pay for this website
+                            building?
+                            <em>(As an example: 345 USD)</em>
+                          </span>
+                        </div>
+
+                        <p class="tab__info">
+                          [<strong>NOTE:</strong> If you want any premium features
+                          then you will purchase and provide me with all the
+                          premium featured plugins and resources. And I will build
+                          your website as you want.]
+                        </p>
+
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Finally, are you ready and can I get started on your
+                            project work?
+                            <em
+                              >(As an example: Yes, you can start my project
+                              now...)</em
+                            >
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- I want the following things to get start your project work:
+
+1. Photoshop/Figma UI or an example website link that will be the inspiration for your website build.
+2. If the website is e-commerce. I need well-documented text files and media files that you like to use on your website.
+3. I need domain hosting that's already connected where I can start project work with WordPress install and setup.
+4. You will give me the required premium theme, plugins, and other resources. I will just build your website.
+5. If I need it, you will provide hosting cPanel login access. -->
+                    <div class="tab__content tab__content--2">
+                      <h4 class="tab__title">
+                        I want the following things to get start your project
+                        work:
+                      </h4>
+                      <div class="tab__discuss">
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Photoshop/Figma UI or an example website link that
+                            will be the inspiration for your website build.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text">
+                            If the website is e-commerce. I need well-documented
+                            text files and media files that you like to use on
+                            your website.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >I need domain hosting that's already connected where
+                            I can start project work with WordPress install and
+                            setup.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >You will give me the required premium theme, plugins,
+                            and other resources. I will just build your website.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >If I need it, you will provide hosting cPanel login
+                            access.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- Payment & refund policy:
+1. You must pay 20% of the total contract money before starting your project work.
+2. After done 50% project work, you will pay 50% money. 
+3. Rest 30% of the money will pay me after the final revision from you.
+4. If you want, you can get a refund of your paid money before 25% project work is done.
+5. You can pay 3 different ways: (i) On Xoom through PayPal (ii) Through Payoneer (iii) through Direct bank/Money order
+
+Revision & final delivery:
+1. I will send you for revision after building the website home/landing page. 
+2. After 80% work is done, I will send you again for revision.
+3. After done the whole project work, I will send you for final revision. After that, I will deliver the project. -->
+                    <div class="tab__content tab__content--3">
+                      <h4 class="tab__title">Payment & refund policy:</h4>
+                      <div class="tab__discuss">
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >You must pay 20% of the total contract money before
+                            starting your project work.</span
+                          >
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >After done 50% project work, you will pay 50%
+                            money.</span
+                          >
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >Rest 30% of the money will pay me after the final
+                            revision from you.</span
+                          >
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >If you want, you can get a refund of your paid money
+                            before 25% project work is done.</span
+                          >
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >You can pay 3 different ways: (i)
+                            <a
+                              class="tab__link"
+                              href="#"
+                              title="Get a video instruction"
+                              onclick="playVideo('assets/video/at-a-glance.mp4')"
+                              >On Xoom through PayPal</a
+                            >
+                            (ii) Through Payoneer (iii)
+                            <a
+                              class="tab__link"
+                              href="#"
+                              title="Get a my bank details"
+                              >through Direct bank/Money order</a
+                            ></span
+                          >
+                        </div>
+                      </div>
+                      <h4 class="tab__title tab__title--dilivery">
+                        Revision & final delivery:
+                      </h4>
+                      <div class="tab__discuss">
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >I will send you for revision after building the
+                            website home/landing page.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >After 80% work is done, I will send you again for
+                            revision.
+                          </span>
+                        </div>
+                        <div class="tab__topic">
+                          <i class="tab__icon fa-solid fa-angle-right"></i>
+                          <span class="tab__text"
+                            >After done the whole project work, I will send you
+                            for final revision. After that, I will deliver the
+                            project.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROCESS SECTION ENDS -->
+
+      <!-- PORTFOLIO SECTION STARTS -->
+      <section id="portfolio" class="section section__portfolio">
+        <div class="container">
+          <!-- <div class="row-portfolio"> -->
+          <div class="row">
+            <!-- <div class="column-portfolio-title"> -->
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">Work Sample</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="portfolio">
+                <nav class="portfolio__nav">
+                  <span class="portfolio__list portfolio__list--active" data-name="all-in-one">All in One</span>
+                  <span class="portfolio__list" data-name="wp-dev">WordPress Dev.</span>
+                  <span class="portfolio__list" data-name="ui-to-html">UI to HTML</span>
+                  <span class="portfolio__list" data-name="ui-ux-design">UI/UX Design</span>
+                  <span class="portfolio__list" data-name="logo-design">Logo Design</span>
+                </nav>
+
+
+
+                <div class="portfolio__gallery">
+                  <div class="portfolio__item" data-name="wp-dev">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-ux-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-ux-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="logo-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="logo-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-ux-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-3.png" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="wp-dev">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="logo-design">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-2.png" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-3.png" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="wp-dev">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="wp-dev">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-3.png" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item" data-name="ui-to-html">
+                    <div class="portfolio__imgbox">
+                      <img class="portfolio__img" src="assets/images/portfolio/website/portfolio-1.jpg" alt="">
+                      <div class="portfolio__icons">
+                        <i class="portfolio__icon portfolio__icon--eye fa-solid fa-eye" onclick="openPopup('assets/images/portfolio/website/portfolio-3.jpg')"></i>
+                        <i class="portfolio__icon fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio__overlay">
+                  <div class="portfolio__overlay-imgbox">
+                    <img class="portfolio__overlay-img" src="" alt=""/>
+                    <i class="portfolio__overlay-icon portfolio__overlay-icon--close fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO SECTION ENDS -->
+
+      <!-- EXPERIENCE SECTION STARTS -->
+      <section id="experience" class="section section__experience">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">Skills</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="skill">
+                <div class="t-skill">
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">HTML</div>
+                    <div class="t-skill__linebar t-skill__linebar--html">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">CSS</div>
+                    <div class="t-skill__linebar t-skill__linebar--css">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">SCSS</div>
+                    <div class="t-skill__linebar t-skill__linebar--scss">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">Tailwind CSS</div>
+                    <div class="t-skill__linebar t-skill__linebar--tailwind">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">Bootstrap CSS</div>
+                    <div class="t-skill__linebar t-skill__linebar--bootstrap">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                  <div class="t-skill__content">
+                    <div class="t-skill__name">JavaScript</div>
+                    <div class="t-skill__linebar t-skill__linebar--js">
+                      <div class="t-skill__line"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-skill">
+                  <div class="p-skill__content">
+                    <div class="p-skill__piechart p-skill__piechart--1">
+                      <div class="p-skill__text p-skill__text--1" data-percent="90">90%</div>
+                    </div>
+                    <h2 class="p-skill__name">Speaking English</h2>
+                  </div>
+                  <div class="p-skill__content">
+                    <div class="p-skill__piechart p-skill__piechart--2">
+                      <div class="p-skill__text p-skill__text--2" data-percent="94">94%</div>
+                    </div>
+                    <h2 class="p-skill__name">Team Management</h2>
+                  </div>
+                  <div class="p-skill__content">
+                    <div class="p-skill__piechart p-skill__piechart--3">
+                      <div class="p-skill__text p-skill__text--3" data-percent="92">92%</div>
+                    </div>
+                    <h2 class="p-skill__name">Communication</h2>
+                  </div>
+                  <div class="p-skill__content">
+                    <div class="p-skill__piechart p-skill__piechart--4">
+                      <div class="p-skill__text p-skill__text--4" data-percent="96">96%</div>
+                    </div>
+                    <h2 class="p-skill__name">Productive Work</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">Experience</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="timeline">
+                <div class="timeline__item">
+                  <h2 class="timeline__year">2020</h2>
+                  <div class="timeline__line"></div>
+                  <div class="timeline__content">
+                    <h2 class="timeline__period">2020 to Present<br /> Frontend Engineer</h2>
+                    <p class="timeline__name">Upwork Global Inc.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <h2 class="timeline__year">2019</h2>
+                  <div class="timeline__line"></div>
+                  <div class="timeline__content">
+                    <h2 class="timeline__period">2019 to Present<br /> Frontend Engineer</h2>
+                    <p class="timeline__name">Fiverr International Ltd.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <h2 class="timeline__year">2020</h2>
+                  <div class="timeline__line"></div>
+                  <div class="timeline__content">
+                    <h2 class="timeline__period">2020 to Present<br /> Frontend Engineer</h2>
+                    <p class="timeline__name">Upwork Global Inc.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <h2 class="timeline__year">2019</h2>
+                  <div class="timeline__line"></div>
+                  <div class="timeline__content">
+                    <h2 class="timeline__period">2019 to Present<br /> Frontend Engineer</h2>
+                    <p class="timeline__name">Fiverr International Ltd.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="counter">
+                <div class="counter__item">
+                  <svg class="counter__icon">
+                    <use xlink:href="assets/svg-icons/sprite.svg#icon-suitcase"></use>
+                  </svg>
+                  <div class="counter__content">
+                    <h2 class="counter__number">120</h2>
+                    <p class="counter__text">Completed Projects</p>
+                  </div>
+                </div>
+                <div class="counter__item">
+                  <svg class="counter__icon">
+                    <use xlink:href="assets/svg-icons/sprite.svg#icon-hour-glass1"></use>
+                  </svg>
+                  <div class="counter__content">
+                    <h2 class="counter__number">100%</h2>
+                    <p class="counter__text">Order Completion</p>
+                  </div>
+                </div>
+                <div class="counter__item">
+                  <svg class="counter__icon">
+                    <use xlink:href="assets/svg-icons/sprite.svg#icon-back-in-time"></use>
+                  </svg>
+                  <div class="counter__content">
+                    <h2 class="counter__number">100%</h2>
+                    <p class="counter__text">On-time Delivery</p>
+                  </div>
+                </div>
+                <div class="counter__item">
+                  <svg class="counter__icon">
+                    <use xlink:href="assets/svg-icons/sprite.svg#icon-paper-plane"></use>
+                  </svg>
+                  <div class="counter__content">
+                    <h2 class="counter__number">100%</h2>
+                    <p class="counter__text">Client Satisfaction</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE SECTION ENDS -->
+
+
+      <!-- TESTIMONIALS SECTION STARTS -->
+      <section id="testimonial" class="section section__testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">Client Reviews</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="review">
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-01.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/upwork.png" alt="Upwork" class="review__market" /></h5>
+                      <q class="review__comment">Mahmudul H. has an excellent work ethic and also is a good communicator and has good english speaking skills. I recommand him to all in my network in Europe.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Sigmar V.</h2>
+                        <h4 class="review__position">Owner & Director of Monsigneur L'Afrique</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-02.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/upwork.png" alt="Upwork" class="review__market" /></h5>
+                      <q class="review__comment">Mahmudul is an exceptional customer-centric individual. He helped me with my branding roll-out. His communication skill made my roll-out easy in addition to his adherence to tight deadlines.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Manjul A.</h2>
+                        <h4 class="review__position">Marketing Manager</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-03.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/fiverr.png" alt="Fiverr" class="review__market" /></h5>
+                      <q class="review__comment">Working with Hassan was excellent. He was responsive, listened and executed the work well. I recommend Hassan and will hire him for future work.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Raminder Brar</h2>
+                        <h4 class="review__position">Marketing Manager & Consultant</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-04.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/fiverr.png" alt="Fiverr" class="review__market" /></h5>
+                      <q class="review__comment">Hasan's attitude was very good. When difficulties came up, he was committed to working through them until the problems were resolved.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Tim Pelton</h2>
+                        <h4 class="review__position">Writer & Co-Founder</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-05.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/linkedIn.png" alt="Linked In" class="review__market" /></h5>
+                      <q class="review__comment">Not my first and not my last order! I totally recommend this guys, I worked alot of times now with him and he delivered an amazing job.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Brand Amazed</h2>
+                        <h4 class="review__position">Owner at Digital Agency</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide">
+                  <div class="review__item">
+                    <div class="review__imgbox">
+                      <img src="assets/images/client/client-05.png" alt="Client Review" class="review__img">
+                    </div>
+                    <div class="review__content">
+                      <h5 class="review__referee">I'm from <img src="assets/images/market/" alt="Local Market" class="review__market" /></h5>
+                      <q class="review__comment">Not my first and not my last order! I totally recommend this guys, I worked alot of times now with him and he delivered an amazing job.</q>
+                      <div class="review__info">
+                        <h2 class="review__name">Brand Amazed</h2>
+                        <h4 class="review__position">Owner at Digital Agency</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="review__btn review__btn--left"><i class="review__icon fa-solid fa-angle-left"></i></button>
+                <button type="button" class="review__btn review__btn--right"><i class="review__icon fa-solid fa-angle-right"></i></button>
+
+                <div class="review__dots">
+                  <!-- <button type="button" class="review__dot review__dot--active" data-slide="0"></button>
+                  <button type="button" class="review__dot" data-slide="1"></button>
+                  <button type="button" class="review__dot" data-slide="2"></button>
+                  <button type="button" class="review__dot" data-slide="3"></button>
+                  <button type="button" class="review__dot" data-slide="4"></button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION ENDS -->
+
+      <!-- PACKAGES SECTION STARTS -->
+      <section id="packages" class="section section__packages">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <div class="title">
+                <h2 class="title__main">Packages</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col">
+              <div class="package">
+                <div class="package__container">
+                  <div class="package__list">
+                    <span class="package__id">ID01</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Landing Page Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$120</del> -->
+                        <span class="package__new">$99</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Simple Website</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Theme Customization</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Sections</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list package__list--tag">
+                    <span class="package__id">ID02</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <del class="package__old">$299</del>
+                        <span class="package__new">$239</span>
+                      </h2>
+                      <p class="package__discount">Get 20% Discount</p>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Simple Website</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Theme Customization</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID03</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full eCommerce Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$399</del> -->
+                        <span class="package__new">$385</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Theme Customization</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Woocommerce Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">25 Products Upload</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Other 10 Required Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">2 Payment Setup</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID04</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Theme Customization</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list package__list--tag">
+                    <span class="package__id">ID05</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Landing Page Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$145</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">UI to WordPress Dev.</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Contact Form</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID06</span>
+                    <div class="package__about">
+                      <h3 class="package__name">UI/UX Design</h3>
+                      <p class="package__more">Figma Template Design</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <!-- <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div> -->
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list package__list--tag">
+                    <span class="package__id">ID07</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID08</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID09</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list package__list--tag">
+                    <span class="package__id">ID10</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list ">
+                    <span class="package__id">ID11</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                  <div class="package__list">
+                    <span class="package__id">ID12</span>
+                    <div class="package__about">
+                      <h3 class="package__name">WordPress</h3>
+                      <p class="package__more">Full Booking Website</p>
+                    </div>
+                    <div class="package__pricing">
+                      <h2 class="package__price">
+                        <!-- <del class="package__old">$345</del> -->
+                        <span class="package__new">$345</span>
+                      </h2>
+                    </div>
+                    <div class="package__features">
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Landing Page</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Booking Option Setup</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">5 - 10 Inner Pages</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">SEO for Google Rank</p>
+                      </div>
+                      <div class="package__item">
+                        <i class="package__icon fa-solid fa-square-check"></i>
+                        <p class="package__feature">Speed Optimization</p>
+                      </div>
+                    </div>
+                    <div class="package__btn-box">
+                      <button type="button" class="package__btn">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+      <!-- PACKAGES SECTION ENDS -->
+
+      <!-- EDUCATION SECTION STARTS -->
+      <section id="education" class="section section__education">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <div class="title">
+                <h2 class="title__main">Education</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="column">
+              <div class="row">
+                <div class="col">
+                  <div class="timeline">
+                    <div class="timeline__item">
+                      <h2 class="timeline__year">BBA</h2>
+                      <div class="timeline__line"></div>
+                      <div class="timeline__content">
+                        <h2 class="timeline__period">I've completed my undergraduate<br /> at American International University-Bangladesh.</h2>
+                        <!-- <p class="timeline__name">Which is equivalent to 'Higher Studies'.</p> -->
+                      </div>
+                    </div>
+                    <div class="timeline__item">
+                      <h2 class="timeline__year">HSC</h2>
+                      <div class="timeline__line"></div>
+                      <div class="timeline__content">
+                        <h2 class="timeline__period">I've passed HSC<br /> from Agriculture University College, Mymensingh.</h2>
+                        <p class="timeline__name">Which is equivalent to 'A-Level'.</p>
+                      </div>
+                    </div>
+                    <div class="timeline__item">
+                      <h2 class="timeline__year">SSC</h2>
+                      <div class="timeline__line"></div>
+                      <div class="timeline__content">
+                        <h2 class="timeline__period">I've finished SSC<br /> from Taldighi High School, Tarakanda.</h2>
+                        <p class="timeline__name">which is equivalent to 'O-Level'.</p>
+                      </div>
+                    </div>
+                    <!-- <div class="timeline__item">
+                      <h2 class="timeline__year">2019</h2>
+                      <div class="timeline__line"></div>
+                      <div class="timeline__content">
+                        <h2 class="timeline__period">2019 to Present<br /> Frontend Engineer</h2>
+                        <p class="timeline__name">Fiverr International Ltd.</p>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- EDUCATION SECTION ENDS -->
+
+      <!-- CONTACT SECTION STARTS -->
+      <section id="contact" class="section section__contact">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">
+                <h2 class="title__main">Contact Me</h2>
+                <p class="title__des">
+                  I'm constantly maintaining quality work for your satisfaction.
+                  <br />You can choose the following services.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col">
+              <div class="contact">
+                <div class="contact__info">
+                  <div class="info">
+                    <div class="info__item info__item--time">
+                      <svg class="info__icon">
+                        <use xlink:href="assets/svg-icons/sprite.svg#icon-back-in-time"></use>
+                      </svg>
+                      <div class="info__text">
+                        <h3 class="info__heading">Active Hours</h3>
+                        <p class="info__timing">Monday - Saturday <br /> 9:00AM - 9:00PM [UTC/GMT+6]</p>
+                      </div>
+                    </div>
+                    <div class="info__item info__item--email">
+                      <svg class="info__icon">
+                        <use xlink:href="assets/svg-icons/sprite.svg#icon-mail"></use>
+                      </svg>
+                      <div class="info__text">
+                        <h3 class="info__heading">Email</h3>
+                        <a href="mailto:contact2mamunn@gmail.com" class="info__link">contact2mamunn@gmail.com</a>
+                      </div>
+                    </div>
+                    <div class="info__item info__item--by">
+                      <svg class="info__icon">
+                        <use xlink:href="assets/svg-icons/sprite.svg#icon-phone"></use>
+                      </svg>
+                      <div class="info__text">
+                        <h3 class="info__whatsapp"><span class="info__app">WhatsApp:</span> +8801987835636</h3>
+                        <h3 class="info__skype"><span class="info__app">Skype ID:</span> Hasan.aiub108_1</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact__form">
+                  <form action="#" class="form">
+                    <div class="form__row">
+                      <div class="form__col">
+                        <input type="text" id="fname" class="form__input" placeholder="What's your name?" required />
+                        <label for="fname" class="form__label">What's your name?</label>
+                      </div>
+                      <div class="form__col">
+                        <input type="email" id="email" class="form__input" placeholder="What's your email address?" required />
+                        <label for="email" class="form__label">What's your email address?</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col">
+                        <input type="text" id="whatsapp" class="form__input" placeholder="What's your whatsapp number?" required />
+                        <label for="whatsapp" class="form__label">What's your whatsapp number?</label>
+                      </div>
+                      <div class="form__col">
+                        <input type="text" id="skype" class="form__input" placeholder="What's your skype user ID?" required />
+                        <label for="skype" class="form__label">What's your skype user ID?</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col form__col--radio">
+                        <div class="form__radio">
+                          <h4 class="form__radio-title">What's your sex?</h4>
+                          <div class="form__group">
+                            <div class="form__radio-group">
+                              <input type="radio" name="sex" id="radio-male" class="form__radio-input" />
+                              <label for="radio-male" class="form__radio-label">
+                                <span class="form__radio-btn"></span>
+                                I'm Male
+                              </label>
+                            </div>
+                            <div class="form__radio-group">
+                              <input type="radio" name="sex" id="radio-female" class="form__radio-input" />
+                              <label for="radio-female" class="form__radio-label">
+                                <span class="form__radio-btn"></span>
+                                I'm Female
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col form__col--message">
+                        <textarea rows="5" id="message" class="form__input" placeholder="Please write here details about what service do you want exactly" required></textarea>
+                        <label for="message" class="form__label">Please write here details about what service do you want exactly</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col form__col--submit">
+                        <!-- <textarea rows="5" id="message" class="form__input" placeholder="Please write here details about what service do you want exactly" required></textarea> -->
+                        <button type="button" class="form__btn">Submit Now</button>
+                        <!-- <label for="message" class="form__label">Please write here details about what service do you want exactly</label> -->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION ENDS -->
+    </main>
+    <!-- CONTENT SECTION ENDS -->
+    
+
+    <!-- SCRIPT FILES -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/problem-solve.js"></script> -->
+  </body>
+</html>

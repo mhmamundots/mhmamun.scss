@@ -1,0 +1,107 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  &__link {
+    &:link,
+    &:visited {
+      text: {
+        decoration: none;
+      }
+
+      padding: 1rem 2.5rem;
+
+      transition: background-image 0.4s ease-in-out,
+        border-image 0.4s ease-in-out;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+    }
+    &:hover,
+    &:active {
+    }
+    &--resume {
+      &:link,
+      &:visited {
+        color: var(--pure-white);
+        background-image: linear-gradient(
+          15deg,
+          var(--secondary-theme-color),
+          var(--primary-theme-color)
+        );
+
+        .btn__icon {
+          animation: btnAnimate 1s infinite forwards,
+            btnAnimate 1s infinite backwards;
+        }
+      }
+      &:hover,
+      &:active {
+        background-image: linear-gradient(
+          15deg,
+          var(--primary-theme-color),
+          var(--secondary-theme-color)
+        );
+      }
+    }
+    &--hire {
+      &:link,
+      &:visited {
+        border: 3px solid;
+        border-image: linear-gradient(
+          15deg,
+          var(--secondary-theme-color),
+          var(--primary-theme-color)
+        );
+        border-image-slice: 1;
+        color: var(--light-color);
+        border-color: var(--color-transparent);
+      }
+      &:hover,
+      &:active {
+        border-image: linear-gradient(
+          15deg,
+          var(--primary-theme-color),
+          var(--secondary-theme-color)
+        );
+        border-image-slice: 1;
+      }
+    }
+  }
+  &__icon {
+    font: {
+      size: 1.6rem;
+    }
+  }
+  &__text {
+    font: {
+      size: 1.7rem;
+      family: "Lato", sans-serif;
+      weight: 600;
+    }
+  }
+}
+
+@keyframes btnAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// @media (max-width: 37em) {
+//   .btn {
+//     &__link {
+//       // width: 15rem;
+//       // flex-direction: row;
+//     }
+//   }
+// }

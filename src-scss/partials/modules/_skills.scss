@@ -1,0 +1,181 @@
+.skill {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5%;
+  .t-skill {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+    }
+    &__name {
+      font: {
+        size: 1.6rem;
+        family: "Lato", sans-serif;
+      }
+      color: var(--light-color);
+    }
+    &__linebar {
+      height: 10px;
+      width: 100%;
+      background-color: var(--pure-white);
+      // border-radius: 1rem;
+      // overflow: hidden;
+
+      position: relative;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: barChart 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+      &--html .t-skill__line {
+        width: 99%;
+        &::after {
+          content: "99%";
+        }
+      }
+      &--css .t-skill__line {
+        width: 98%;
+        &::after {
+          content: "98%";
+        }
+      }
+      &--scss .t-skill__line {
+        width: 95%;
+        &::after {
+          content: "95%";
+        }
+      }
+      &--tailwind .t-skill__line {
+        width: 92%;
+        &::after {
+          content: "92%";
+        }
+      }
+      &--bootstrap .t-skill__line {
+        width: 90%;
+        &::after {
+          content: "90%";
+        }
+      }
+      &--js .t-skill__line {
+        width: 80%;
+        &::after {
+          content: "80%";
+        }
+      }
+    }
+    &__line {
+      height: 10px;
+      width: 80%;
+      background-image: linear-gradient(
+        15deg,
+        var(--primary-theme-color),
+        var(--secondary-theme-color)
+      );
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: barChart 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+      &::after {
+        position: absolute;
+        top: -2rem;
+        right: 0;
+
+        color: var(--light-color);
+
+        font: {
+          size: 1.4rem;
+          weight: 700;
+          family: "Lato", sans-serif;
+        }
+
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+      }
+    }
+  }
+
+  .p-skill {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 3rem 0;
+    border-radius: 1rem;
+
+    background-color: var(--dark-color-day-mode);
+    &__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+    &__piechart {
+      width: 12rem;
+      height: 12rem;
+      // background-color: red;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      // border: 1rem solid;
+      // border-image-slice: 1;
+      &::before {
+        content: "";
+        display: inline-block;
+
+        position: absolute;
+
+        width: 83%;
+        height: 83%;
+        background-color: var(--dark-color-day-mode);
+        border-radius: 50%;
+      }
+    }
+    &__text {
+      color: var(--light-color);
+
+      font: {
+        size: 1.8rem;
+        weight: 700;
+        family: "Lato", sans-serif;
+      }
+      z-index: 9;
+    }
+    &__name {
+      font: {
+        size: 1.6rem;
+        family: "Lato", sans-serif;
+      }
+      text: {
+        align: center;
+      }
+      color: var(--light-color);
+    }
+  }
+}
+
+@keyframes barChart {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
